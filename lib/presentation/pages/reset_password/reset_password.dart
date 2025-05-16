@@ -15,7 +15,6 @@ class ResetPasswordPage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const SizedBox(height: 15),
-              // 🔙 Back button
               GestureDetector(
                 onTap: () => Navigator.pop(context),
                 child: Container(
@@ -32,7 +31,7 @@ class ResetPasswordPage extends StatelessWidget {
               ),
               const SizedBox(height: 30),
 
-              // 🔐 Title
+              // Title
               const Center(
                 child: Text(
                   "Réinitialiser\nMot de Passe",
@@ -47,7 +46,7 @@ class ResetPasswordPage extends StatelessWidget {
 
               const SizedBox(height: 45),
 
-              // 🖼 Illustration
+              // Illustration
               Center(
                 child: Container(
                   decoration: const BoxDecoration(
@@ -61,7 +60,7 @@ class ResetPasswordPage extends StatelessWidget {
                     ],
                   ),
                   child: Image.asset(
-                    'assets/images/res_pass.png', // ✅ Use your actual path
+                    'assets/images/res_pass.png',
                     width: 170,
                     height: 170,
                   ),
@@ -70,7 +69,7 @@ class ResetPasswordPage extends StatelessWidget {
 
               const SizedBox(height: 30),
 
-              // 📝 Description
+              //  Description
               const Center(
                 child: Text(
                   "Pour réinitialiser votre mot de passe, veuillez\nsaisir votre adresse e-mail et suivre les étapes\nindiquées.",
@@ -87,7 +86,7 @@ class ResetPasswordPage extends StatelessWidget {
               ),
               const SizedBox(height: 8),
 
-              // 📧 Email Field
+              //  Email Field
               TextField(
                 decoration: InputDecoration(
                   contentPadding: const EdgeInsets.symmetric(
@@ -107,7 +106,7 @@ class ResetPasswordPage extends StatelessWidget {
 
               const SizedBox(height: 180),
 
-              // 📩 Submit Button
+              // Submit Button
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(

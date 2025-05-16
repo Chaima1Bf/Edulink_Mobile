@@ -17,7 +17,7 @@ class ClubDetailsPage extends StatelessWidget {
             children: [
               const SizedBox(height: 20),
 
-              // 🔙 Back & 🔔 Notification buttons
+              // Header
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -72,7 +72,7 @@ class ClubDetailsPage extends StatelessWidget {
               ),
               const SizedBox(height: 40),
 
-              // 📸 Club Image
+              // Club Image
               ClipRRect(
                 borderRadius: BorderRadius.circular(16),
                 child: Image.asset(
@@ -84,7 +84,7 @@ class ClubDetailsPage extends StatelessWidget {
               ),
               const SizedBox(height: 24),
 
-              // 🏷️ Title
+              // Title
               const Text(
                 "Club de Musique",
                 style: TextStyle(
@@ -95,7 +95,7 @@ class ClubDetailsPage extends StatelessWidget {
               ),
               const SizedBox(height: 12),
 
-              // 📄 Description
+              //  Description
               const Text(
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.\n\nLorem ipsum dolor sit amet, consectetur . Tempor incididunt ut labore et dolore magna aliqua ullamco laboris. Et harum quidem rerum facilis est et expedita distinctio.",
                 style: TextStyle(
@@ -106,7 +106,7 @@ class ClubDetailsPage extends StatelessWidget {
               ),
               const SizedBox(height: 28),
 
-              // 📅 & 🕒 Cards
+              // Cards
               Row(
                 children: [
                   Expanded(
@@ -132,7 +132,7 @@ class ClubDetailsPage extends StatelessWidget {
               ),
               const SizedBox(height: 120),
 
-              // 💰 Price
+              // Price
               Container(
                 width: double.infinity,
                 padding: const EdgeInsets.symmetric(
@@ -169,7 +169,6 @@ class ClubDetailsPage extends StatelessWidget {
     );
   }
 
-  // 🔁 Circle icon for back & notification
   Widget _circleIcon({
     required IconData icon,
     VoidCallback? onTap,
@@ -190,7 +189,7 @@ class ClubDetailsPage extends StatelessWidget {
     );
   }
 
-  // 🔁 Info pill card with white icon circle
+  // Info pill card
   Widget _infoCard({
     required IconData icon,
     required String text,

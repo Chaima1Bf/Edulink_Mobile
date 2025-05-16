@@ -76,7 +76,7 @@ class _CalendarPageState extends State<CalendarPage> {
     initializeDateFormatting('fr_FR');
   }
 
-  // 🗓️ Schedule per date
+  // Schedule per date
   final Map<String, List<Map<String, dynamic>>> schedule = {
     '2025-04-20': [
       {
@@ -121,7 +121,7 @@ class _CalendarPageState extends State<CalendarPage> {
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
           child: Column(
             children: [
-              // 🔼 Header
+              // Header
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -176,7 +176,7 @@ class _CalendarPageState extends State<CalendarPage> {
               ),
               const SizedBox(height: 20),
 
-              // 📅 Date Info + Emploi
+              // Date Info + Emploi
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -240,7 +240,7 @@ class _CalendarPageState extends State<CalendarPage> {
               ),
               const SizedBox(height: 20),
 
-              // 📆 Calendar
+              // Calendar
               TableCalendar(
                 locale: 'fr_FR',
                 firstDay: DateTime.utc(2020),
@@ -269,43 +269,42 @@ class _CalendarPageState extends State<CalendarPage> {
                 ),
 
                 calendarStyle: CalendarStyle(
-                  // Fix for selected day decoration
                   selectedDecoration: BoxDecoration(
                     shape: BoxShape.rectangle,
                     color: AppColors.primaryRed,
                     borderRadius: BorderRadius.circular(10),
                   ),
-                  // Fix for today decoration
+
                   todayDecoration: BoxDecoration(
                     shape: BoxShape.rectangle,
                     color: AppColors.primaryRed.withOpacity(0.5),
                     borderRadius: BorderRadius.circular(10),
                   ),
-                  // Make sure default decoration is also rectangle
+
                   defaultDecoration: const BoxDecoration(
                     shape: BoxShape.rectangle,
                   ),
-                  // Make sure weekend decoration is also rectangle
+
                   weekendDecoration: const BoxDecoration(
                     shape: BoxShape.rectangle,
                   ),
-                  // Make sure outside decoration is also rectangle
+
                   outsideDecoration: const BoxDecoration(
                     shape: BoxShape.rectangle,
                   ),
-                  // Make sure holiday decoration is also rectangle (if exists)
+
                   holidayDecoration: const BoxDecoration(
                     shape: BoxShape.rectangle,
                   ),
-                  // Make sure disabled days decoration is also rectangle
+
                   disabledDecoration: const BoxDecoration(
                     shape: BoxShape.rectangle,
                   ),
-                  // Make sure marker decoration is rectangle
+
                   markerDecoration: const BoxDecoration(
                     shape: BoxShape.rectangle,
                   ),
-                  // Range decorations
+
                   rangeStartDecoration: BoxDecoration(
                     shape: BoxShape.rectangle,
                     borderRadius: BorderRadius.circular(10),
@@ -356,7 +355,7 @@ class _CalendarPageState extends State<CalendarPage> {
               ),
               const SizedBox(height: 10),
 
-              // 🗓️ Courses of the day
+              // Courses of the day
               Expanded(
                 child:
                     daySchedule.isEmpty
@@ -448,7 +447,7 @@ class _CalendarPageState extends State<CalendarPage> {
         padding: const EdgeInsets.all(6),
         decoration: BoxDecoration(
           color: color.withOpacity(0.15),
-          shape: BoxShape.rectangle, // Changed from circle to rectangle
+          shape: BoxShape.rectangle,
           borderRadius: BorderRadius.circular(12),
         ),
         child: Icon(icon, color: color),

@@ -26,7 +26,6 @@ class NewsPage extends StatelessWidget {
         'time': '10h - 14h',
         'isLieu': false,
       },
-      // Add more news items as needed
     ];
 
     return Scaffold(
@@ -37,7 +36,7 @@ class NewsPage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // 🔼 Header
+              // Header
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -93,7 +92,7 @@ class NewsPage extends StatelessWidget {
 
               const SizedBox(height: 25),
 
-              // 📰 News Cards List
+              // News Cards List
               Expanded(
                 child: ListView.separated(
                   itemCount: newsList.length,

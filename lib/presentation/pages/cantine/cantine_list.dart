@@ -65,7 +65,7 @@ class CantineListPage extends StatelessWidget {
           padding: const EdgeInsets.all(20),
           child: Column(
             children: [
-              // 🔼 Header
+              // Header
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -162,9 +162,7 @@ class CantineListPage extends StatelessWidget {
                             item['image'],
                             height: 90,
                             width: 90,
-                            fit:
-                                BoxFit
-                                    .contain, // or BoxFit.cover / BoxFit.fill depending on your preference
+                            fit: BoxFit.contain,
                           ),
 
                           Text(

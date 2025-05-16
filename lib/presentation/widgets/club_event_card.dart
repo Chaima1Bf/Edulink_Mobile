@@ -1,4 +1,3 @@
-// news_card.dart
 import 'package:flutter/material.dart';
 import '../../../core/constants/app_colors.dart';
 
@@ -50,7 +49,7 @@ class NewsCard extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // 🏷️ Title
+                //  Title
                 Text(
                   title,
                   style: const TextStyle(
@@ -61,7 +60,7 @@ class NewsCard extends StatelessWidget {
                 ),
                 const SizedBox(height: 8),
 
-                // 🕒 Time & Date
+                //  Time & Date
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -71,7 +70,7 @@ class NewsCard extends StatelessWidget {
                 ),
                 const SizedBox(height: 12),
 
-                // 💰 Price (if isLieu is true)
+                // Price (if isLieu is true)
                 if (isLieu)
                   Container(
                     padding: const EdgeInsets.symmetric(

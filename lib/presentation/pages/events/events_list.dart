@@ -36,7 +36,7 @@ class EventsPage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // 🔼 Header
+              // Header
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -92,7 +92,7 @@ class EventsPage extends StatelessWidget {
 
               const SizedBox(height: 20),
 
-              // 🔍 Search
+              // Search
               Container(
                 decoration: BoxDecoration(
                   color: AppColors.white,
@@ -144,7 +144,7 @@ class EventsPage extends StatelessWidget {
 
               const SizedBox(height: 30),
 
-              // 🏷️ Section Title
+              // Section Title
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: const [
@@ -168,7 +168,7 @@ class EventsPage extends StatelessWidget {
 
               const SizedBox(height: 20),
 
-              // 📋 Cards List (1 per row, centered & styled)
+              // Cards List
               Expanded(
                 child: ListView.separated(
                   itemCount: 6,

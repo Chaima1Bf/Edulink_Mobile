@@ -15,7 +15,7 @@ class ExerciceDetailsPage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // 🔼 Header
+              // Header
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -70,24 +70,24 @@ class ExerciceDetailsPage extends StatelessWidget {
               ),
               const SizedBox(height: 25),
 
-              // 🏷️ Tags
+              // Tags
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   _tag(
                     "Foulen Ben Foulen",
                     "teacher",
-                    const Color(0xFF46DDB9).withOpacity(0.3), // 30% opacity
+                    const Color(0xFF46DDB9).withOpacity(0.3),
                   ),
                   _tag(
                     "Physique",
                     "book",
-                    const Color(0xFF8183FE).withOpacity(0.3), // 30% opacity
+                    const Color(0xFF8183FE).withOpacity(0.3),
                   ),
                   _tag(
                     "20/03/2024",
                     "cal2",
-                    const Color(0xFFFA7193).withOpacity(0.3), // 30% opacity
+                    const Color(0xFFFA7193).withOpacity(0.3),
                   ),
                 ],
               ),
@@ -104,7 +104,7 @@ class ExerciceDetailsPage extends StatelessWidget {
               ),
               const SizedBox(height: 10),
 
-              // 📋 Description
+              // Description
               const _BulletText(
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
               ),
@@ -136,7 +136,7 @@ class ExerciceDetailsPage extends StatelessWidget {
   Widget _tag(String text, String iconName, Color bgColor) {
     return Container(
       width: 100,
-      height: 80, // increased slightly to prevent overflow
+      height: 80,
       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
       decoration: BoxDecoration(
         color: bgColor,
@@ -194,7 +194,7 @@ class ExerciceDetailsPage extends StatelessWidget {
   }
 }
 
-// 📍 Custom Widget for Bullet Points
+// Custom Widget for Bullet Points
 class _BulletText extends StatelessWidget {
   final String text;
   const _BulletText(this.text);

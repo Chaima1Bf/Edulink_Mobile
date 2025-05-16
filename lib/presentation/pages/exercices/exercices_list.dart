@@ -30,7 +30,7 @@ class _ExercicesPageState extends State<ExercicesPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // 🔼 Header
+              // Header
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -97,7 +97,7 @@ class _ExercicesPageState extends State<ExercicesPage> {
 
               const SizedBox(height: 25),
 
-              // 🧾 Exercises List
+              // Exercises List
               Expanded(
                 child: ListView.separated(
                   itemCount: exercises.length,
@@ -222,7 +222,7 @@ class _ExercicesPageState extends State<ExercicesPage> {
           Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              // Colored vertical bar
+              // vertical bar
               Container(
                 width: 3,
                 height: 35,

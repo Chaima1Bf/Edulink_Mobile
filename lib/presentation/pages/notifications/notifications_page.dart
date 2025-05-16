@@ -50,7 +50,7 @@ class NotificationsPage extends StatelessWidget {
         child: Column(
           children: [
             const SizedBox(height: 15),
-            // 🔔 Header
+            // Header
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Row(
@@ -77,7 +77,7 @@ class NotificationsPage extends StatelessWidget {
             ),
             const SizedBox(height: 20),
 
-            // 📩 Notifications List
+            // Notifications List
             Expanded(
               child: ListView.separated(
                 padding: const EdgeInsets.symmetric(

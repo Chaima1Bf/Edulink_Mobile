@@ -10,10 +10,10 @@ class ChooseChildPage extends StatelessWidget {
     final double topPadding = MediaQuery.of(context).padding.top;
 
     return Scaffold(
-      backgroundColor: const Color(0xFFFDF8F8), // Light pink background
+      backgroundColor: const Color(0xFFFDF8F8),
       body: Column(
         children: [
-          // 🔴 Header that extends behind status bar
+          // Header
           Container(
             width: double.infinity,
             padding: EdgeInsets.only(top: topPadding + 16, bottom: 24),
@@ -50,7 +50,7 @@ class ChooseChildPage extends StatelessWidget {
 
           const SizedBox(height: 100),
 
-          // 🌸 Avatar with soft radial background
+          // Avatar
           Container(
             decoration: const BoxDecoration(
               shape: BoxShape.circle,
@@ -62,15 +62,13 @@ class ChooseChildPage extends StatelessWidget {
             ),
             child: const CircleAvatar(
               radius: 90,
-              backgroundImage: AssetImage(
-                'assets/images/child.png',
-              ), // Replace with your image
+              backgroundImage: AssetImage('assets/images/child.png'),
             ),
           ),
 
           const SizedBox(height: 30),
 
-          // 👧 Name + arrows beside it
+          //  Name + arrows beside it
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 32.0),
             child: Row(
@@ -108,7 +106,7 @@ class ChooseChildPage extends StatelessWidget {
 
           SizedBox(height: 200),
 
-          // 🔘 Continue Button
+          // Continue Button
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 32.0),
             child: SizedBox(

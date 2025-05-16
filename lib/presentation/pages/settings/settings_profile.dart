@@ -3,6 +3,7 @@ import '../../../core/constants/app_colors.dart';
 import '/presentation/pages/home/home_page.dart';
 import 'dart:io';
 import 'package:image_picker/image_picker.dart';
+import '/presentation/pages/payments/my_payments.dart';
 
 class SettingsProfilePage extends StatefulWidget {
   const SettingsProfilePage({super.key});
@@ -67,6 +68,11 @@ class _SettingsProfilePageState extends State<SettingsProfilePage> {
         context,
         MaterialPageRoute(builder: (_) => const HomePage()),
       );
+    } else if (index == 0) {
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => const MyPaymentsPage()),
+      );
     } else {
       setState(() {
         _selectedIndex = index;
@@ -85,7 +91,7 @@ class _SettingsProfilePageState extends State<SettingsProfilePage> {
           children: [
             const SizedBox(height: 20),
 
-            // 👤 Profile Card
+            // Profile Card
             Container(
               margin: const EdgeInsets.symmetric(horizontal: 20),
               padding: const EdgeInsets.symmetric(vertical: 25, horizontal: 15),
@@ -222,7 +228,7 @@ class _SettingsProfilePageState extends State<SettingsProfilePage> {
 
             const SizedBox(height: 30),
 
-            // ⚙️ Title
+            // Title
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Align(

@@ -8,6 +8,7 @@ import '/presentation/pages/cantine/cantine_list.dart';
 import '/presentation/pages/settings/settings_profile.dart';
 import '/presentation/pages/exercices/exercices_list.dart';
 import '/presentation/pages/calendar/calendar_page.dart';
+import '/presentation/pages/payments/my_payments.dart';
 
 const List<Map<String, dynamic>> categories = [
   {'label': 'Actualités', 'icon': 'megaphone.png', 'color': 0x4D46DDB9},
@@ -158,7 +159,7 @@ class HomePage extends StatelessWidget {
 
                 const SizedBox(height: 30),
 
-                // Catégories
+                // Categories
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 20),
                   child: Column(
@@ -249,7 +250,6 @@ class HomePage extends StatelessWidget {
                 const SizedBox(height: 25),
 
                 // Actualités
-                // Actualités
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 20),
                   child: Column(
@@ -270,9 +270,7 @@ class HomePage extends StatelessWidget {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                  builder:
-                                      (context) =>
-                                          const NewsPage(), // Make sure to create this page
+                                  builder: (context) => const NewsPage(),
                                 ),
                               );
                             },
@@ -349,11 +347,12 @@ class HomePage extends StatelessWidget {
                 builder: (context) => const SettingsProfilePage(),
               ),
             );
+          } else if (index == 0) {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const MyPaymentsPage()),
+            );
           }
-          // You can add navigation for other icons as well
-          // if (index == 0) { // Credit card icon
-          //   // Navigate to payment page
-          // }
         },
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.credit_card), label: ''),
@@ -576,7 +575,7 @@ class NewsCard extends StatelessWidget {
   }
 }
 
-// 🌊 Header Wave
+// Header Wave
 class HomeHeaderClipper extends CustomClipper<Path> {
   @override
   Path getClip(Size size) {

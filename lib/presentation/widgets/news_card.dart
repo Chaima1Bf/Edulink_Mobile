@@ -36,7 +36,7 @@ class NewsCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // 📸 Image with price tag
+          //  Image with price tag
           Stack(
             children: [
               ClipRRect(
@@ -44,7 +44,7 @@ class NewsCard extends StatelessWidget {
                   top: Radius.circular(12),
                 ),
                 child: AspectRatio(
-                  aspectRatio: 16 / 9, // Increased height visually
+                  aspectRatio: 16 / 9,
                   child: Image.asset(
                     imageAsset,
                     width: double.infinity,
@@ -77,7 +77,7 @@ class NewsCard extends StatelessWidget {
             ],
           ),
 
-          // 🧾 Title
+          // Title
           Padding(
             padding: const EdgeInsets.fromLTRB(12, 12, 12, 8),
             child: Text(
@@ -90,7 +90,7 @@ class NewsCard extends StatelessWidget {
             ),
           ),
 
-          // 🕓 Info chips
+          // Info chips
           Padding(
             padding: const EdgeInsets.fromLTRB(12, 0, 12, 12),
             child: Row(

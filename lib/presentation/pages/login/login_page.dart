@@ -9,8 +9,7 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor:
-          AppColors.pageBackground, // bleu très clair en arrière-plan
+      backgroundColor: AppColors.pageBackground,
       body: SafeArea(
         child: Column(
           children: [
@@ -36,7 +35,7 @@ class LoginPage extends StatelessWidget {
 
             const SizedBox(height: 20),
 
-            // 📦 Zone rouge avec tout le contenu
+            //  Zone rouge avec tout le contenu
             Expanded(
               child: Container(
                 width: double.infinity,
@@ -89,20 +88,13 @@ class LoginPage extends StatelessWidget {
                     Row(
                       children: [
                         Theme(
-                          data: ThemeData(
-                            unselectedWidgetColor:
-                                Colors.white, // bordure blanche
-                          ),
+                          data: ThemeData(unselectedWidgetColor: Colors.white),
                           child: Checkbox(
                             value: false,
                             onChanged: (_) {},
-                            activeColor: Colors.white, // fond cochée blanche
-                            checkColor:
-                                AppColors
-                                    .primaryRed, // coche rouge (optionnel pour contraste)
-                            side: const BorderSide(
-                              color: Colors.white,
-                            ), // bordure
+                            activeColor: Colors.white,
+                            checkColor: AppColors.primaryRed,
+                            side: const BorderSide(color: Colors.white),
                           ),
                         ),
                         const Text(
